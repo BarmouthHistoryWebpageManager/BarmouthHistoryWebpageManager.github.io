@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+{% with title="Chapter # - #", mirrorPage= url_for('pennod#'),
+imageFolderPath='chapters/chapter-#/', headerImagePath=imageFolderPath ~ 'image1' %}
+{% include 'en/head.html' %}
+
+{% include 'en/heading.html' %}
+
+<div id="chapter#" class="body">
+    <div class="plate1">
+
+    </div>
+</div>
+
+{% endwith %}
+
+</html>

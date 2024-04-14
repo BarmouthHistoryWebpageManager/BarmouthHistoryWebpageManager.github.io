@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+{% with title="Pennodau", mirrorPage= url_for('chapters') %}
+{% include 'cy/head.html' %}
+
+{% include 'cy/heading.html' %}
+{% endwith %}
+
+<div id="home">
+    <div class="plate1">
+        {% with chapters=chapters %}
+        {% include 'cy/listPennodau.html' %}
+        {% endwith %}
+    </div>
+</div>

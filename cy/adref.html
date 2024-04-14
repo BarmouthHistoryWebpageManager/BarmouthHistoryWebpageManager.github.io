@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% with title="Adref", mirrorPage=url_for('home'), chapters=chapters%}
+{% include 'cy/head.html' %}
+
+{% include 'cy/heading.html' %}
+{% endwith %}
+
+<div id="home">
+    <div class="plate1">
+        <div class="plate2">
+            <h2>Croeso</h2>
+            <p>Croeso i Hanes Abermaw.</p>
+        </div>
+        <div class="plate2">
+            <h2>Cynnwys</h2>
+            {% include 'cy/listPennodau.html' %}
+        </div>
+    </div>
+</div>

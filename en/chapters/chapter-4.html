@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+{% with title="Chapter 4 - The Bridge", mirrorPage= url_for('pennod4'),
+imageFolderPath='chapters/chapter-4/', headerImagePath=imageFolderPath ~ 'image1' %}
+{% include 'en/head.html' %}
+
+{% include 'en/heading.html' %}
+
+<div id="chapter4" class="body">
+    <div class="plate1">
+        {% with plateLevel="2", name=imageFolderPath ~ 'image9', alt="Building the viaduct 1866" %}
+        {% include 'image.html' %}
+        {% endwith %}
+        <div class="plate2">
+            <p>
+                Construction of Barmouth Bridge began in 1864 and was completed in 1867. The
+                bridge opened on 3rd June of that year to horse drawn carriages and on 10th
+                October to locomotives. It was designed and constructed for the Aberystwyth and
+                Welsh Coast Railway to make an Aberystwyth to Pwllheli line. The bridge was
+                originally built with 113 wooden spans and 8 iron spans. There was a “cock and
+                draw” section close to the Barmouth side. The purpose of this draw bridge section
+                was to let vessels pass in and out of the Estuary. Thomas Savin, a Welsh
+                entrepreneur was the mastermind behind the bridge. The construction was
+                difficult due to the strong currents of the Mawddach and two men drowned
+                during its build.
+            </p>
+        </div>
+        {% with plateLevel="2", name=imageFolderPath ~ 'image11', alt="Cock and Draw 1880" %}
+        {% include 'image.html' %}
+        {% endwith %}
+        <div class="plate2">
+            <p>
+                After the discovery that the underwater iron sections were severely corroded in
+                1899 the drawbridge section was replaced with two steel spans. One of the spans
+                used to be a swing bridge so ships could continue to pass through.
+            </p>
+        </div>
+        {% with plateLevel="2", name=imageFolderPath ~ 'image10', alt="Open Span 1957" %}
+        {% include 'image.html' %}
+        {% endwith %}
+        {% with plateLevel="2", name=imageFolderPath ~ 'image11', alt="Cock and Draw 1880" %}
+        {% include 'image.html' %}
+        {% endwith %}
+    </div>
+</div>
+
+{% endwith %}
+
+</html>
