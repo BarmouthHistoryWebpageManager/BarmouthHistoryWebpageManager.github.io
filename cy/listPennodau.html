@@ -1,6 +1,0 @@
-<ul>
-    {% for i in range(1, chapters['welsh']|length) %}
-    {% set currentChapter = 'pennod' ~ i %}
-    <li><a href="{{ url_for(currentChapter) }}" tabindex="{{ i }}">Chapter {{ i }}: {{ chapters['welsh'][i] }}</a></li>
-    {% endfor %}
-</ul>
